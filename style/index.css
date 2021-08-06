@@ -1,1 +1,156 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*General Styles*/
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+body {
+	line-height: 1;
+	color: black;
+	font-family: 'Hahmlet', serif;
+}
+a {
+	background-color: white;
+	text-decoration: none;
+	color: inherit;
+	border: 1px solid black;
+}
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 2rem;
+	color: brown;
+}
+section {
+	padding: 1%;
+}
+p {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.25;
+}
+.container {
+	background-color: blanchedalmond;
+	width: 50%;
+	margin: auto;
+}
+/*Header*/
+header {
+	background-color: #F1B1B1;
+	padding: 4%;
+}
+.top-navigation {
+	display: flex;
+	padding: 2%;
+}
+.top-navigation a{
+	padding: 1% 2%;
+}
+a.this-page {
+	background-color: black;
+	color: white;
+}
+/*Sections*/
+.about {
+	display: flex;
+}
+.profile-pic {
+	width: 50%;
+	align-self: center;
+	border: 8px dashed red;
+}
+.about-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 0 5%;
+}
+.about-text > *{
+	padding: 2%;
+	margin: 2% 0;
+}
+.about-project-link a{
+	padding: 2% 5%;
+}
+.projects-display {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+	color: darkgreen;
+}
+.projects-display div{
+	width: 22.5%;
+	margin: 1% 0;
+}
+.projects-display img {
+	border: 5px ridge white;
+	object-fit: cover;
+	height: 90%;
+	align-self: start;
+}
+/*Footer*/
+footer {
+	background-color: peachpuff;
+	text-align: center;
+	border: 10px solid #F4CCC2;
+	padding: 7%;
+}
+.footer-contact {
+	margin: 3%;
+}
+.footer-contact a{
+	display: inline-block;
+	border: 3px solid white;
+	background-color: darksalmon;
+	color:white;
+	padding: 2% 5%;
+}
