@@ -43,6 +43,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /*General Styles*/
 * {
 	box-sizing: border-box;
@@ -82,6 +83,7 @@ p {
 	width: 50%;
 	margin: auto;
 }
+
 /*Header*/
 header {
 	background-color: #F1B1B1;
@@ -137,6 +139,7 @@ a.this-page {
 	height: 90%;
 	align-self: start;
 }
+
 /*Footer*/
 footer {
 	background-color: peachpuff;
@@ -147,10 +150,79 @@ footer {
 .footer-contact {
 	margin: 3%;
 }
-.footer-contact a{
+.footer-contact a {
 	display: inline-block;
 	border: 3px solid white;
 	background-color: darksalmon;
 	color:white;
 	padding: 2% 5%;
+}
+
+@media (max-width: 800px) {
+	.container {
+		width: 100%;
+	}
+	.about {
+		width: 95%;
+		margin: auto;
+	}
+	.about-text {
+		padding: 0 2%;
+	}
+	.projects-display {
+		width: 95%;
+		margin: auto;
+	}
+	footer {
+		border-width: 7px;
+		padding: 4%;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	header {
+		border-bottom: 5px solid white ;
+	}
+	.top-navigation {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 3%;
+		padding: 1%;
+	}
+	.top-navigation a {
+		width: 30%;
+	}
+	.profile-pic {
+		width: 80%;
+		margin-top: 2%;
+	}
+	.about {
+		width: 90%;
+		flex-direction: column;
+	}
+	.about-text {
+		justify-content: flex-start;
+	}
+	.about-text > *{
+		margin: 1% 0;
+	}
+	.projects-display {
+		width: 90%;
+		flex-wrap: wrap;
+		align-self: center;
+		justify-content: space-evenly;
+	}
+	.projects-display div{
+		width: 40%;
+	}
+	h4 {
+		font-size: 1.6rem;
+	}
 }
